@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-project"          # rename this
+version = "0.1.0"
+description = "Individual project for LLMs & You"
+requires-python = ">=3.11"
+dependencies = ["anthropic>=0.70"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/project"]   # rename to match
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"

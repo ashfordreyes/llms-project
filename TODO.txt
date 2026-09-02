@@ -1,0 +1,43 @@
+TODO — things to do to the next prompt
+======================================
+
+Write the thought down the moment you have it, in whichever section it
+belongs to. Delete the line once it is done. This file is meant to be
+messy. Nothing in it is graded; everything in it eventually moves
+somewhere that is.
+
+An hour after you have the thought, you no longer have the thought. That
+is the whole reason this file exists.
+
+Delete these examples and put your own in.
+
+
+## Change in the prompt
+Something the next version of a file in prompts/ has to do differently.
+
+- [ ] say what format the output should be in — it drifts between prose
+      and bullets on the same input
+
+
+## Add to evals/cases.jsonl
+An input that broke it, or one you want to be sure keeps working. One
+case per line. A change that "seems better" is a guess until this file
+says otherwise.
+
+- [ ] the question that made it invent a citation
+
+
+## Worth an ADR
+A choice a reader could not reconstruct from the code. Write it up in
+docs/adr/ while you still remember what you rejected — the alternatives
+section is the part that is graded.
+
+- [ ] why we are not using few-shot examples
+
+
+## Ask about
+Anything you are unsure of. Bring these to class or to office hours; a
+question you carried around for a week is a week you did not need to
+spend on it.
+
+- [ ] does raising `effort` change what a call costs?

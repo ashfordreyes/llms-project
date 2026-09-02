@@ -1,0 +1,31 @@
+# Never commit a key. The pre-commit hook in .githooks/ is the backstop, but
+# this is the first line of defence.
+.env
+.env.*
+!.env.example
+*.key
+secrets.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Model output you generated but should not version. Delete this line if your
+# project's outputs ARE the artifact -- some are.
+outputs/
