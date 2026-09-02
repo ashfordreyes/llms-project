@@ -29,3 +29,8 @@ htmlcov/
 # Model output you generated but should not version. Delete this line if your
 # project's outputs ARE the artifact -- some are.
 outputs/
+
+# Dataset contents -- not versioned, but keep the directory itself as a
+# placeholder for people who clone (see /dataset/.gitkeep).
+/dataset/*
+!/dataset/.gitkeep
